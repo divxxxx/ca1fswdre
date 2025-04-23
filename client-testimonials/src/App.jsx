@@ -4,12 +4,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function App(){
+  return(
+    <div style={{display:'flex', justifyContent:'center', flexWrap:'wrap'}}>
+      <TestimonialCard name="John Doe" review="The service was amazing, The new features are really wonderful"/>
+      <TestimonialCard name="Hema sharma" review="Will recommend this to all my family and friends, really helpful, Thanks a lot"/>
 
-function ({ name, text }) {
-    return (
-    <div className="clientTestimonials">
-    <h3 className="name">{name}</h3>      
-    <p className="text">{text}</p>    
-    </div>  
-);
-}     
+    </div>
+  );
+};
+
+export default App;
